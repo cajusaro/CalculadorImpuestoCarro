@@ -313,7 +313,7 @@ public class CalculadorImpuestos {
 
         // TODO: Retornar el primer vehículo que tiene la marca dada
         for (Vehiculo ve : vehiculos){
-            if (ve.darMarca().equals(marca)){
+            if (ve.darMarca().equalsIgnoreCase(marca)){
                 buscado = ve;
                 break;
             }
@@ -333,7 +333,7 @@ public class CalculadorImpuestos {
 
         // TODO: Buscar el primer vehículo que tiene la línea dada
         for (Vehiculo ve : vehiculos){
-            if (ve.darLinea().equals(linea)){
+            if (ve.darLinea().equalsIgnoreCase(linea)){
                 buscado = ve;
                 break;
             }
